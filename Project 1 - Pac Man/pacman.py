@@ -1,10 +1,7 @@
 import pygame
 
-(width, height) = (300,200)
 square = 20
-screen = pygame.display.set_mode((width,height))
 
-pygame.display.flip()
 
 gameBoard = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -21,3 +18,9 @@ gameBoard = [
     [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0]
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ]
+
+(width, height) = (len(gameBoard) * square , len(gameBoard[0]) * square)
+screen = pygame.display.set_mode((width,height))
+pygame.display.flip()
+
+running = True
