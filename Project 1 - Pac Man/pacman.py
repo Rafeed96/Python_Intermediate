@@ -12,6 +12,8 @@ level = boards
 color = 'blue'
 PI = math.pi
 
+
+
 def draw_board():
     num1 = ((HEIGHT -50) // 32)
     num2 = (WIDTH // 30)
